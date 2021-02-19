@@ -1,0 +1,27 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HabibaHegazy/Chat-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HabibaHegazy/Chat-App/issues"
+  },
+  "homepage": "https://github.com/HabibaHegazy/Chat-App#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.16",
+    "path": "^0.12.7",
+    "socket.io": "^3.1.1"
+  }
+}
