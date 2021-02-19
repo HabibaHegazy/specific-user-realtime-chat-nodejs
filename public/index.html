@@ -6,9 +6,10 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"
         id="bootstrap-css">
     <link href="/css/style.css" type="text/css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body>
+<!-- <body>
     <div class="chat_window">
         <input id="username" class="username" placeholder="Type username to send to" />
         <div class="top_menu">
@@ -42,6 +43,74 @@
     <script src="https://cdn.jsdelivr.net/gh/rexeze/formatTimeStamp/src/index-cdn.js"></script>
     <script src="/js/chat.js"></script>
 
+</body> -->
+
+<body>
+    <div class="container">
+        <div class="chatbox">
+            <div class="top-bar">
+                <div class="avatar">
+                    <p>R</p>
+                </div>
+                <div class="name">Reciever</div>
+                <div class="icons">
+                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-video"></i>
+                </div>
+                <div class="menu">
+                    <div class="dots"></div>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="voldemort">
+                    <div class="incoming">
+                        <div class="bubble">Message from Reciever</div>
+                    </div>
+                    <div class="outgoing">
+                        <div class="bubble">Message from ME</div>
+                    </div>
+                    <div class="typing">
+                        <div class="bubble">
+                            <div class="ellipsis one"></div>
+                            <div class="ellipsis two"></div>
+                            <div class="ellipsis three"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <div class="chat">
+                    <from id="form">
+                        <input type="text" placeholder="Type a message..." />
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </from>
+                </div>
+            </div>
+        </div>
+        <div class="messages"></div>
+        <div class="profile">
+            <div class="avatar">
+                <p>H</p>
+            </div>
+            <div class="name2">Habiba<p class="email">HabibaHegazy@gmail.com</p>
+            </div>
+        </div>
+
+        <ul class="people">
+            <li class="person focus">
+                <span class="title">Voldemort </span>
+                <span class="time">2:50pm</span><br>
+                <span class="preview">What are you getting... Oh, oops...</span>
+            </li>
+            <li class="person">
+                <span class="title">Ron</span>
+                <span class="time">2:25pm</span><br>
+                <span class="preview">Meet me at Hogsmeade and bring...</span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="/js/chat.js"></script>
 </body>
 
 </html>
