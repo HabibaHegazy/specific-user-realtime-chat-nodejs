@@ -20,6 +20,7 @@
   "dependencies": {
     "bluebird": "^3.5.1",
     "express": "^4.17.1",
+    "font-awesome": "^4.7.0",
     "mongoose": "^5.11.16",
     "path": "^0.12.7",
     "socket.io": "^3.1.1"

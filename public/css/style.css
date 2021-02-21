@@ -210,7 +210,7 @@
     font-style: italic;
   } */
 
-  @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 html {
   display: grid;
   min-height: 100%;
@@ -218,7 +218,7 @@ html {
 
 body {
   display: grid;
-  background: linear-gradient(to bottom left, #79C7C5 40%, #F9FBFF 100%);
+  background: linear-gradient(to bottom left, #79c7c5 40%, #f9fbff 100%);
   font-family: "Lato", sans-serif;
 }
 
@@ -231,7 +231,7 @@ body {
 
 .messages {
   position: absolute;
-  background: #F9FBFF;
+  background: #f9fbff;
   opacity: 0.5;
   width: 30%;
   height: 70%;
@@ -265,23 +265,23 @@ body {
   margin-top: 2px;
 }
 .people .preview {
-  color: #79C7C5;
+  color: #79c7c5;
   margin-left: 14px;
   font-size: 0.5em;
 }
 
 .person {
   padding: 12px 0 12px 12px;
-  border-bottom: 1px solid #79C7C5;
+  border-bottom: 1px solid #79c7c5;
   cursor: pointer;
 }
 .person:hover {
-  background: #F9FBFF;
+  background: #f9fbff;
   transition: all 0.3s ease-in-out;
 }
 
 .focus {
-  background: #F9FBFF;
+  background: #f9fbff;
   margin-left: 1px;
 }
 
@@ -296,14 +296,14 @@ body {
   top: 50px;
   left: 2px;
   text-transform: uppercase;
-  color: #79C7C5;
+  color: #79c7c5;
   font-size: 0.8em;
   letter-spacing: 2px;
   font-weight: 500;
 }
 
 .email {
-  color: #F9FBFF;
+  color: #f9fbff;
   font-size: 0.5em;
   margin-left: -30px;
   margin-top: 2px;
@@ -321,21 +321,21 @@ body {
 .top-bar {
   width: 100%;
   height: 60px;
-  background: #F9FBFF;
+  background: #f9fbff;
   border-radius: 10px 10px 0 0;
 }
 
 .avatar {
   width: 35px;
   height: 35px;
-  background: linear-gradient(to bottom left, #79C7C5 20%, #A1E2D9 100%);
+  background: linear-gradient(to bottom left, #79c7c5 20%, #a1e2d9 100%);
   border-radius: 50%;
   position: absolute;
   top: 11px;
   left: 15px;
 }
 .avatar p {
-  color: #F9FBFF;
+  color: #f9fbff;
   margin: 7px 12px;
 }
 
@@ -365,7 +365,7 @@ body {
 
 .icons {
   position: absolute;
-  color: #A1E2D9;
+  color: #a1e2d9;
   padding: 10px;
   top: 5px;
   right: 21px;
@@ -384,13 +384,13 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: #79C7C5;
-  box-shadow: 0px 7px 0px #79C7C5, 0px 14px 0px #79C7C5;
+  background-color: #79c7c5;
+  box-shadow: 0px 7px 0px #79c7c5, 0px 14px 0px #79c7c5;
 }
 
 .middle {
   position: absolute;
-  background: #F9FBFF;
+  background: #f9fbff;
   width: 100%;
   opacity: 0.85;
   top: 60px;
@@ -442,7 +442,7 @@ body {
   position: relative;
   display: inline-block;
   margin-bottom: 5px;
-  color: #F9FBFF;
+  color: #f9fbff;
   font-size: 0.7em;
   padding: 10px 10px 10px 12px;
   border-radius: 20px;
@@ -461,7 +461,7 @@ body {
   height: 100%;
 }
 .outgoing .bubble {
-  background: #79C7C5;
+  background: #79c7c5;
   float: right;
 }
 
@@ -470,7 +470,7 @@ body {
   width: 100%;
   height: 55px;
   bottom: 0;
-  background: #F9FBFF;
+  background: #f9fbff;
   border-radius: 0 0 10px 10px;
 }
 
@@ -485,12 +485,12 @@ input {
   position: absolute;
   border: 0;
   top: 13px;
-  background: #F9FBFF;
-  color: #79C7C5;
+  background: #f9fbff;
+  color: #79c7c5;
 }
 
 input::placeholder {
-  color: #A1E2D9;
+  color: #a1e2d9;
 }
 
 input:focus {
@@ -502,7 +502,7 @@ button {
   position: absolute;
   border: 0;
   font-size: 1em;
-  color: #A1E2D9;
+  color: #a1e2d9;
   top: 19px;
   opacity: 0.8;
   right: 17px;
@@ -512,7 +512,7 @@ button {
 button:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
-  color: #79C7C5;
+  color: #79c7c5;
 }
 
 footer {
@@ -524,16 +524,16 @@ footer {
   padding: 10px;
 }
 footer p {
-  color: #79C7C5;
+  color: #79c7c5;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 footer a {
-  color: #F9FBFF;
+  color: #f9fbff;
   text-decoration: none;
 }
 footer a:hover {
-  color: #A1E2D9;
+  color: #a1e2d9;
 }
 
 @keyframes bounce {

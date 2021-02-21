@@ -14,7 +14,7 @@ const connect = require("./dbconnect");
 
 // frontend thing
 app.use(
-  express.static(path.join(__dirname, "public"), { index: "login.html" })
+  express.static(path.join(__dirname, "/public"), { index: "login.html" })
 );
 
 // const chatRouter = require("./chat.route")
