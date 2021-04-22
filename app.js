@@ -1,36 +1,45 @@
-const mongoose = require("mongoose");
-mongoose.Promise = require("bluebird");
-const path = require("path");
+const mongoose = require("mongoose")
+mongoose.Promise = require("bluebird")
+const path = require("path")
 
-const express = require("express");
-const app = express();
-const server = require("http").Server(app);
-const socket = require("socket.io")(server);
+const express = require("express")
+const app = express()
+const server = require("http").Server(app)
+const socket = require("socket.io")(server)
 
-const port = 8080;
+const port = 8080
 
 // database connection
-const connect = require("./dbconnect");
+const connect = require("./dbconnect")
 
 // frontend thing
 app.use(
   express.static(path.join(__dirname, "/public"), { index: "login.html" })
-);
+)
 
-// const chatRouter = require("./chat.route")
-// app.use("/chats", chatRouter)
-
-// const loginRouter = require("./login.route")
-// app.use("/login", loginRouter)
+// controllers
+const userController = require('./controller/users.controller')
+const roomController = require('./controller/rooms.controller')
 
 // server and socket -- setup event listener
 socket.on("connection", socket => {
-  console.log("user connected");
-  // check if user got messages or not to send
+  console.log("user connected")
 
-  socket.on("disconnect", function() {
-    console.log("user disconnected");
-  });
+  socket.on("login", username => {
+    userController.getRooms(socket, username)
+  })
+
+  socket.on("get all messages", data => {
+    roomController.getRooms(socket, data)
+  })
+
+  socket.on("chat message", data => {
+    roomController.updateRoom(socket, data)
+  })
+
+  socket.on("disconnect", function () {
+    console.log("user disconnected")
+  })
 
   // //Someone is typing
   // socket.on("typing", data => {
@@ -45,12 +54,8 @@ socket.on("connection", socket => {
   //     socket.broadcast.emit("notifyStopTyping")
   // })
 
-  socket.on("chat message", function(msg) {
-    // the user will send his own ID, reciever ID and msg
-    //
-  });
-});
+})
 
-server.listen(port, function() {
-  console.log("Listening on port " + port);
-});
+server.listen(port, function () {
+  console.log("Listening on port " + port)
+})
